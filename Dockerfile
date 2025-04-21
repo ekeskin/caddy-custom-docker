@@ -1,7 +1,7 @@
 # ---- Builder Stage ----
 # Use the official Caddy builder image for the specified version.
 # This image contains the 'xcaddy' tool needed to build Caddy with plugins.
-FROM caddy:$2-builder AS builder
+FROM caddy:2-builder AS builder
 
 # Use xcaddy to build Caddy with the required custom modules.
 # Standard modules are included automatically.
